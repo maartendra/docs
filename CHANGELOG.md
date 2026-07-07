@@ -26,6 +26,7 @@ and this project adheres to
 - ♿️(frontend) remove redundant aria-label on table of contents links #2459
 - ♻️(core) fix typo in settings COLLABORATION_WS_NOT_CONNECTED_READY_ONLY #2481
 - ♻️(backend) scope document search by document id instead of path #2501
+- ♻️(backend) reset collaboration connection in cascade for all children
 
 ### Fixed
 
