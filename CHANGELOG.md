@@ -15,6 +15,7 @@ and this project adheres to
 - ✨(frontend) add a user menu #2463
 - ✨(frontend) new header and responsive harmonization #2471
 - ✨(backend) add management command to reset a Document #1882
+- ✨(frontend) restore skip to content link after header redesign #2510
 
 ### Changed
 
