@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/suitenumerique/docs">
-    <img alt="Docs" src="/docs/assets/banner-docs.png" width="100%" />
+    <img alt="Docs" src="documentation/assets/banner-docs.png" width="100%" />
   </a>
 </p>
 
@@ -24,7 +24,7 @@
 
 <p align="center">
   <a href="https://matrix.to/#/#docs-official:matrix.org">Chat on Matrix</a> •
-  <a href="/docs/">Documentation</a> •
+  <a href="documentation/">Documentation</a> •
   <a href="#try-docs">Try Docs</a> •
   <a href="mailto:docs@numerique.gouv.fr">Contact us</a>
 </p>
@@ -35,7 +35,7 @@
 
 Docs is an open-source collaborative editor that helps teams write, organize, and share knowledge together - in real time.
 
-![Live collaboration demo](/docs/assets/docs_live_collaboration_light.gif)
+![Live collaboration demo](documentation/assets/mirabeau.png)
 
 
 ## What is Docs?
@@ -70,10 +70,29 @@ Docs is an open-source alternative to tools like Notion or Google Docs, focused 
 - Subpages & hierarchy
 - Searchable content
 
-### Export/Import & interoperability
+### Presentations
+
+- Simple structure, based on delimiter (`---`)
+- Full screen option
+- PDF exports
+- Keyboard navigation
+- Start presention from a block
+- Presentation link
+
+![demo of slide mode in Docs](documentation/assets/slidemode.gif)
+
+### Export/Import
 
 - Import to `.docx` and `.md`
 - Export to `.docx`, `.odt`, `.pdf`
+
+### Interoperability
+Docs comes with a [resource server API](documentation/resource_server.md) and a [server to server API](https://github.com/suitenumerique/docs/blob/c647cb62f1cbf1af9841ae8cb3818e34bb566c9c/documentation/env.md#L76-L77) which allows for awesome integrations.
+
+#### A concrete example: [Meet](https://github.com/suitenumerique/meet/)'s transcriptions
+If you're running a Meet instance, with simple config (`DJANGO_SERVER_TO_SERVER_API_TOKENS`) you can push your meeting transcript to Docs and give access to the user who requested it.
+
+![transcript in Docs screenshot](documentation/assets/transcripts.png)
 
 ## Try Docs
 
@@ -83,13 +102,13 @@ Experience Docs instantly - no installation required.
 - 🌍 [Browse public instances][instances]
 
 [demo]: https://docs.la-suite.eu/docs/9137bbb5-3e8a-4ff7-8a36-fcc4e8bd57f4/
-[instances]: /docs/instances.md
+[instances]: documentation/instances.md
 
 ## Self-hosting
 
 Docs supports Kubernetes, Docker Compose, and community-provided methods such as Nix and YunoHost.
 
-Get started with self-hosting: [Installation guide](/docs/installation/README.md)
+Get started with self-hosting: [Installation guide](documentation/installation/README.md)
 
 > [!WARNING]
 > Some advanced features (for example: `Export as PDF`) rely on XL packages from Blocknote.
@@ -103,7 +122,7 @@ Get started with self-hosting: [Installation guide](/docs/installation/README.md
 >
 > This builds an image of Docs without non-MIT features.
 >
-> More details can be found in [environment variables](/docs/env.md)
+> More details can be found in [environment variables](documentation/env.md)
 
 ## Local Development (for contributors)
 
@@ -247,5 +266,5 @@ Docs is the result of a joint initiative led by the French 🇫🇷 ([DINUM](htt
 We are always looking for new public partners (we are currently onboarding the Netherlands 🇳🇱), feel free to [contact us](mailto:docs@numerique.gouv.fr) if you are interested in using or contributing to Docs.
 
 <p align="center">
-  <img src="/docs/assets/europe_opensource.png" width="50%"/ alt="Europe Opensource">
+  <img src="documentation/assets/europe_opensource.png" width="50%"/ alt="Europe Opensource">
 </p>
